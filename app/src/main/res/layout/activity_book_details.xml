@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookdetailRL">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:tint="#FFFFFF"
+            android:layout_margin="10dp"
+            android:onClick="back"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="my name"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/mynameBTV"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="my email"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mynameBTV"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookdetailRL"
+        android:text="Personal information"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:id="@+id/infoLL"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/cutton"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/bookdetailRL"
+        android:orientation="vertical">
+
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="seller name"
+           android:textSize="15dp"
+           android:id="@+id/namedetailTV"
+           />
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="seller id"
+           android:id="@+id/iddetailTV"
+
+           />
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="seller department"
+           android:id="@+id/depdetailTV"
+
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seller sec"
+            android:id="@+id/secdetailTV"
+
+            />
+
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="seller semester"
+           android:id="@+id/semesterdetailTV"
+
+           />
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="seller batch no"
+           android:id="@+id/batchdetailTV"
+
+           />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book info"
+        android:textStyle="bold"
+        android:layout_below="@+id/infoLL"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="2dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/infoLL"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+       android:background="@drawable/cutton"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Name"
+            android:id="@+id/nameBDetailTV"
+            android:inputType="text"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:id="@+id/quantityBDetailTV"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Writter Name"
+            android:id="@+id/writterBDetailTV"
+            android:inputType="text"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edition"
+            android:id="@+id/editionBDetailTV"
+            android:inputType="text"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:id="@+id/priceBDetailTV"
+            android:inputType="text"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contact me here"
+            android:id="@+id/contactBET"
+            android:inputType="phone"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

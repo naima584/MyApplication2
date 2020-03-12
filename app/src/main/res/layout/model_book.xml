@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/cutton"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/openbook"
+            android:id="@+id/bookIV"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bookIV"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="book Name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/nameBTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="book Quantity"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/quantityBTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="book writter"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/writterBTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="book edition"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/editionBTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="book price"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/priceBTV"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/cutton"
+                android:text="Details"
+                android:visibility="gone"
+                android:id="@+id/bookdetailsBTN"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/priceBTV"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

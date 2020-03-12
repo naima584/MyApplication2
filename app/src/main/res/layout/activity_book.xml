@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Book">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ballLL"
+        android:id="@+id/viewl"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+
+
+        >
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Book posts"
+            android:id="@+id/saleviewBTN"
+            android:textAllCaps="false"
+            android:background="@drawable/cuttonppp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Sale"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/exchangeviewBTN"
+            android:background="@drawable/cuttonppp"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ticketRL">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Information"
+            android:background="@color/colorAccent"
+            android:textColor="#F7F6F6"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:id="@+id/bookinfo"
+            android:alpha="7"
+            android:textSize="30sp"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/ballLL"
+        android:background="@drawable/cutton"
+        android:layout_below="@+id/ticketRL">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:id="@+id/userdep"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/userid"
+            android:textSize="18sp"
+            android:text="userid"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/usersec"
+            android:text="usersec"
+            android:padding="5dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/cutton"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:layout_below="@+id/viewl"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/postLayout"
+            android:visibility="gone"
+
+            >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/detailTV"
+
+
+            /> <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Name"
+            android:maxLines="1"
+            android:id="@+id/nameBET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:id="@+id/quantityBET"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Writter Name"
+            android:id="@+id/writterBET"
+            android:inputType="text"
+            android:maxLines="1"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edition"
+            android:id="@+id/editionBET"
+            android:inputType="text"
+            android:maxLines="1"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:id="@+id/priceBET"
+            android:inputType="text"
+            android:maxLines="1"
+
+            />
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contact me here"
+            android:id="@+id/contactBET"
+            android:inputType="phone"
+                android:maxLines="1"
+
+            />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:text="Post"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        android:background="@drawable/cuttond"
+            android:textStyle="bold"
+            android:id="@+id/postBBTN"
+            android:gravity="center"
+
+
+            />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/cutton"
+            android:id="@+id/bookrecyclerRV">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

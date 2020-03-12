@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ticket">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ticketRL"
+        android:id="@+id/viewl"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+
+
+        >
+        <Button
+            android:layout_height="wrap_content"
+            android:text="posts"
+            android:id="@+id/saleviewBTN1"
+            android:textAllCaps="false"
+            android:background="@drawable/cuttonppp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Sale"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/exchangeviewBTN1"
+            android:background="@drawable/cuttonppp"
+
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ticketRL">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ticket Information"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:background="@color/colorAccent"
+            android:textColor="#F7F6F6"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cutton"
+        android:padding="50dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/viewl"
+        android:orientation="vertical"
+
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/saleL"
+    android:gravity="center"
+    android:visibility="gone"
+
+    >
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ticket Type"
+            android:id="@+id/typeTET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ticket Quantity"
+            android:id="@+id/quantityTET"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Name :"
+            android:id="@+id/vehicleTET"
+            android:inputType="text"
+            android:layout_below="@+id/quantityTET"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ticket Date "
+            android:id="@+id/dateTET"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ticket Price"
+            android:id="@+id/priceTET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact me here"
+            android:id="@+id/contactTET"
+            android:inputType="text"/>
+
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="Post"
+            android:textSize="10sp"
+            android:background="@drawable/cuttond"
+            android:gravity="center"
+            android:id="@+id/postBTN"/>
+
+</LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/cutton"
+            android:id="@+id/postrecyclerRV"
+            android:visibility="visible"
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

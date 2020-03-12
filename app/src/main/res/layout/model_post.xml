@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cutton"
+        android:id="@+id/ticRL">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ticpost"
+        android:id="@+id/bookIV"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bookIV"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ticket Type"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/typeTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ticket Quantity"
+                android:textColor="@color/colorAccent"
+            android:id="@+id/quantityTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vehicle name"
+                android:textColor="@color/colorAccent"
+            android:id="@+id/vehicleTV"
+                /><TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ticket date"
+                android:textColor="@color/colorAccent"
+            android:id="@+id/dateTV"
+                /><TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ticket price"
+                android:textColor="@color/colorAccent"
+            android:id="@+id/priceTV"
+                /><TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contact me here"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/contactTV"
+                />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/cutton"
+            android:text="Details"
+            android:id="@+id/ticdetailsBTN"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone
+"
+            android:layout_below="@id/priceBTV"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

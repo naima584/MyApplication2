@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Emergency">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/emergencyRL"
+        android:id="@+id/emergencyviewLL"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+
+
+        >
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Emergency posts"
+            android:id="@+id/saleviewBTNemr"
+            android:textAllCaps="false"
+            android:background="@drawable/cuttonppp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Sale"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/exchangeviewBTNemr"
+            android:background="@drawable/cuttonppp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emergencyRL">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Help"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:textColor="#F7F6F6"
+            android:textStyle="italic"
+            android:alpha="7"
+            android:textSize="30sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:background="@drawable/cutton"
+        android:layout_below="@+id/emergencyviewLL"
+        android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/postVL"
+    android:visibility="gone"
+    android:gravity="center"
+    >
+
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Help Type"
+            android:id="@+id/helptypeET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:id="@+id/helpquantityET"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Build No"
+            android:id="@+id/buildET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Floor"
+            android:id="@+id/floorET"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact me"
+            android:id="@+id/contacthelpET"
+            android:inputType="text"
+
+            />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textStyle="bold"
+            android:background="@drawable/cuttond"
+            android:id="@+id/posthelpBTN"/>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/cutton"
+            android:id="@+id/helprecyclerRV"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

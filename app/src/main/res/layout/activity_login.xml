@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIU"
+        android:textSize="100dp"
+        android:textColor="#F3F2F2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXCHANGE "
+        android:textSize="50dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorAccent"
+        android:gravity="center"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLL"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter Email address"
+
+            android:layout_centerInParent="true"
+            android:id="@+id/emailET"
+            />
+
+         <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@diu.edu.bd"
+             android:editable="false"
+            android:layout_centerInParent="true"
+            android:id="@+id/emailaddressET"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter Password "
+
+        android:id="@+id/passwordET"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailLL"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/loginBTN"
+        android:textAllCaps="false"
+        android:layout_below="@+id/passwordET"
+        android:background="@drawable/cutton"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBTN"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:id="@+id/newuserTV"
+            android:text="or"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+
+            />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+          android:layout_toLeftOf="@+id/newuserTV"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/viewabc"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+          android:layout_toRightOf="@+id/newuserTV"
+            android:id="@+id/viewabhgc"/>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create new account"
+            android:id="@+id/createaccountBTN"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:onClick="createaccount"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+
+            android:textStyle="bold"
+
+
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

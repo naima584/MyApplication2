@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cutton">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sheetpost"
+            android:id="@+id/bookIV"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bookIV"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/nameSTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sheet Quantity"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/quantitySTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sheet topic"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/topicSTV"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sheet price"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/priceSTV"
+                />
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/cutton"
+                android:text="Details"
+                android:id="@+id/sheetdetailsBTN"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/priceBTV"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

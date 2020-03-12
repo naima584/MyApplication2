@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentInfo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoRL"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Information"
+            android:textStyle="bold"
+            android:id="@+id/infoTV"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#F7F6F6"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/circleIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/userinfo"
+            android:layout_centerInParent="true"
+
+            android:layout_below="@+id/infoTV"
+           />
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/cutton"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/infoRL"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/nameSET"
+            android:maxLines="1"
+            android:inputType="text"
+            android:visibility="gone"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:maxLines="1"
+
+            android:id="@+id/idSET"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="diu Id"
+            android:id="@+id/depSET"
+            android:maxLines="1"
+
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:id="@+id/batchSET"
+            android:inputType="text"
+            android:maxLines="1"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semester"
+            android:id="@+id/semSET"
+            android:maxLines="1"
+
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sec"
+            android:id="@+id/secSET"
+            android:inputType="text"
+            android:maxLines="1"
+
+
+            />
+
+
+
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/cuttond"
+            android:id="@+id/saveBTN"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
